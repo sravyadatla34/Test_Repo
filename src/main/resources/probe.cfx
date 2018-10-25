@@ -1,0 +1,42 @@
+<setup>
+   loglevel = 3
+</setup>
+<startup>
+   options = -Xms32m -Xmx512m -Duser.language=en -Duser.country=US
+</startup>
+<resources>
+</resources>
+<messages>
+   <ResourceCritical>
+      name = ResourceCritical
+      token = resource_error
+      msn_err = $host is not responding (reason: $descr)
+      msn_ok = $host is now responding
+      sev = 5
+      subsystem = 2.7.1
+   </ResourceCritical>
+   <ResourceError>
+      name = ResourceError
+      token = resource_error
+      msn_err = $host is not responding (reason: $descr)
+      msn_ok = $host is now responding
+      sev = 4
+      subsystem = 2.7.1
+   </ResourceError>
+   <StatusWarning> clear
+      name = StatusWarning
+      token = monitor_error
+      msn_err = The status on $monitor is not as expected ($value)
+      msn_ok = The status on $monitor is OK
+      sev = 3
+      subsystem = 2.7.8
+   </StatusWarning>
+   <StatusError> clear
+      name = StatusError
+      token = monitor_error
+      msn_err = The status on $monitor is not as expected ($value)
+      msn_ok = The status on $monitor is OK
+      sev = 4
+      subsystem = 2.7.8
+   </StatusError>
+</messages>

@@ -1,0 +1,33 @@
+<probe-schema probe-name="probe-name-string">
+    <element-types>
+        <element-type name="RESOURCE">
+            <qos-metric-types>
+                <qos-metric-type name="ResourceResponseTime">
+                    <description>Duration time in milli-seconds of last resource collection cycle.</description>
+                    <label>ResourceResponseTime</label>
+                    <metric-type>1.10:14</metric-type>
+                    <qos-name>QOS_RESOURCE_RESPONSE_TIME</qos-name>
+                    <unit>MilliSeconds</unit>
+                </qos-metric-type>
+            </qos-metric-types>
+        </element-type>
+
+        <element-type name="ExampleGenericElement">
+            <base-element-type>Element</base-element-type>
+            <icon>checkbox</icon>
+            <properties/>
+            <qos-metric-types>
+                <qos-metric-type name="ExampleMetric">
+                    <active>yes</active>
+                    <description>Example Metric</description>
+                    <label>Example Metric</label>
+                    <metric-type>9.9:9</metric-type>
+                    <qos-name>QOS_EXAMPLE_METRIC</qos-name>
+                    <unit>count</unit>
+                    <conversions/>
+                </qos-metric-type>
+            </qos-metric-types>
+        </element-type>
+    </element-types>
+</probe-schema>
+

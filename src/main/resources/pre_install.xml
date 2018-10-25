@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<packageCleanSpec>
+    <packageDir>probes/application/hello_world</packageDir>
+    <logFileName>pre_install.log</logFileName>
+    <filesToDelete>
+        <filePattern>
+            <pattern>.*</pattern>
+            <excludePattern>.*\.cf.</excludePattern>
+            <excludePattern>pre_install.*</excludePattern>
+            <excludePattern>.*\.log</excludePattern>
+            <excludePattern>archivedFiles</excludePattern>
+            <excludePattern>bulk_config</excludePattern>
+            <excludePattern>diagnostics</excludePattern>
+        </filePattern>
+    </filesToDelete>
+    <filesToArchive>
+        <file>hello_world.log</file>
+        <file>_hello_world.log</file>
+    </filesToArchive>
+</packageCleanSpec>
